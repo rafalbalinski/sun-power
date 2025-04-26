@@ -1,0 +1,21 @@
+<div class="navbar" [class.navbar--box-shadow]="hasNavigationBoxShadow()">
+  <div class="navbar__logo">
+    <img src="assets/img/logo.png" alt="" />
+  </div>
+
+  <nav class="navbar__menu-items">
+    @for (navigationItem of navigationItems(); track navigationItem.name) {
+      <a
+        class="menu-item"
+        [class.menu-item--active]="
+          navigationItem.fragment === currentFragment()
+        "
+        [routerLink]="navigationItem.path"
+        [fragment]="navigationItem.fragment"
+        >{{ navigationItem.name }}</a
+      >
+    }
+  </nav>
+
+  <div class="navbar__spacer"></div>
+</div>
