@@ -17,8 +17,8 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     fragment: 'offer',
   },
   {
-    name: 'Cennik',
+    name: 'Kontakt',
     path: [''],
-    fragment: 'pricing',
+    fragment: 'contact',
   },
 ];

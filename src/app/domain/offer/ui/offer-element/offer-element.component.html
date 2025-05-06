@@ -1,0 +1,22 @@
+<div
+  class="offer-element"
+  [class.offer-element--selected]="offerElement().selected"
+>
+  <img
+    class="offer-element__icon"
+    [src]="'assets/img/' + offerElement().icon"
+    alt="offer icon"
+  />
+
+  <h4 class="offer-element__title">{{ offerElement().title }}</h4>
+
+  <span class="offer-element__description">{{
+    offerElement().description
+  }}</span>
+
+  <div class="offer-element__spacer"></div>
+
+  <span class="offer-element__price">
+    {{ offerElement().price | currency }}
+  </span>
+</div>

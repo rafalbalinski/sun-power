@@ -1,0 +1,13 @@
+<div class="offer">
+  <app-section-title
+    [hasShadowTitle]="true"
+    [title]="'Oferta'"
+    [subTitle]="'Cennik usług'"
+  />
+
+  <div class="offer__elements">
+    @for (offerElement of offerStorage.offer(); track $index) {
+      <app-offer-element [offerElement]="offerElement" />
+    }
+  </div>
+</div>
