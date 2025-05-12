@@ -5,6 +5,7 @@
     "paths": {
       "@database/*": ["app/database/*"],
       "@navigation/*": ["app/core/navigation/*"],
+      "@contact/*": ["app/domain/contact/*"],
       "@offer/*": ["app/domain/offer/*"],
     },
     "outDir": "./dist/out-tsc",

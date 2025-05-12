@@ -1,0 +1,136 @@
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 110px 60px;
+  background-image: linear-gradient(90deg, #1341a9 50%, #1654c3 80%);
+  color: #ffffff;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 46px;
+    animation: 12s linear 0s infinite alternate none running;
+    background-size: cover;
+  }
+
+  &::before {
+    top: 35px;
+    left: 20px;
+    background-image: url("assets/img/grid.png");
+    width: 46px;
+    animation-name: gridHorizontalMove;
+  }
+
+  &::after {
+    bottom: 35px;
+    right: 20px;
+    background-image: url("../../../assets/img/grid-double-wide.png");
+    width: 92px;
+    animation-name: gridDoubleWideHorizontalMove;
+  }
+
+  &__title {
+    margin: 10px 0 25px;
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    &__primary,
+    &__secondary {
+      border: none;
+      padding: 19px 46px;
+      font-size: 16px;
+      font-weight: 800;
+      font-family: Manrope, sans-serif;
+      border-radius: 30px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    &__primary {
+      color: #002e44;
+      background-color: #ffffff;
+    }
+
+    &__secondary {
+      color: #ffffff;
+      background-color: #00b0ff;
+    }
+  }
+
+  @media (width > 800px) {
+    padding: 110px 120px;
+
+    &::before {
+      top: 45px;
+    }
+
+    &::after {
+      bottom: 45px;
+    }
+
+    &__title {
+      margin: 5px 0 20px;
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    &__buttons {
+      flex-direction: row;
+    }
+  }
+}
+
+@keyframes gridHorizontalMove {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(-40px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(40px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes gridDoubleWideHorizontalMove {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(40px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-40px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
