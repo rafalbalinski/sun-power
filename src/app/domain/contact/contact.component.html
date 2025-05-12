@@ -1,0 +1,17 @@
+<div class="contact">
+  <span class="contact__subtitle">{{ contact().subtitle }}</span>
+
+  <h3 class="contact__title">{{ contact().title }}</h3>
+
+  <div class="contact__buttons">
+    <a [href]="'tel:' + contact().phone" class="contact__buttons__primary">{{
+      contact().phone
+    }}</a>
+
+    <a
+      [href]="'mailto:' + contact().email"
+      class="contact__buttons__secondary"
+      >{{ contact().email }}</a
+    >
+  </div>
+</div>
