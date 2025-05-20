@@ -1,0 +1,23 @@
+<div class="malfunction">
+  <div class="malfunction__title">
+    <app-section-title
+      [hasShadowTitle]="true"
+      [title]="malfunction().title"
+      [subTitle]="malfunction().subTitle"
+    />
+  </div>
+
+  <div class="malfunction__description">
+    <h4 class="malfunction__description__header">
+      {{ malfunction().description.header }}
+    </h4>
+
+    <p class="malfunction__description__content">
+      {{ malfunction().description.content }}
+    </p>
+  </div>
+
+  <div class="malfunction__elements">
+    <app-accordion [accordions]="malfunction().malfunctions" />
+  </div>
+</div>

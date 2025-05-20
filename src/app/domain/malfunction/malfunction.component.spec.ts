@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactComponent } from './contact.component';
+import { MalfunctionComponent } from './malfunction.component';
 
-describe(ContactComponent.name, () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe(MalfunctionComponent.name, () => {
+  let component: MalfunctionComponent;
+  let fixture: ComponentFixture<MalfunctionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent],
+      imports: [MalfunctionComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(MalfunctionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

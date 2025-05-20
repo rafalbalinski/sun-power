@@ -21,4 +21,9 @@ export const NAVIGATION_ITEMS: NavigationItem[] = [
     path: [''],
     fragment: 'contact',
   },
+  {
+    name: 'Typowe usterki',
+    path: [''],
+    fragment: 'malfunction',
+  },
 ];

@@ -1,0 +1,64 @@
+.accordion {
+  position: relative;
+  padding-right: 48px;
+  color: #002e44;
+  border-bottom: 1px solid #b6c8e9;
+  cursor: pointer;
+  overflow: hidden;
+  max-height: 90px;
+  transition: max-height 1.2s;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+    line-height: 25px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      width: 15px;
+      height: 3px;
+      border-radius: 5px;
+      background-color: rgb(0, 46, 68);
+      transition: transform 0.3s;
+    }
+  }
+
+  &__content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+    padding: 0 30px 30px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1445af;
+    transition: width 0.6s;
+  }
+
+  &--active {
+    max-height: 500px;
+
+    &::before {
+      width: 100%;
+    }
+
+    .accordion__header::before {
+      transform: rotateZ(90deg);
+    }
+  }
+}

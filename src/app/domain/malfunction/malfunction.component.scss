@@ -1,0 +1,35 @@
+.malfunction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 70px;
+  margin-top: 130px;
+  color: #002e44;
+
+  &__title {
+    flex: 1 0 100%;
+  }
+
+  &__description {
+    &__header {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    &__content {
+      line-height: 1.85;
+      font-size: 15px;
+    }
+  }
+
+  @media (width > 900px) {
+    flex-direction: row;
+
+    &__description,
+    &__elements {
+      flex: 0 0 calc(50% - 35px);
+      max-width: 565px;
+    }
+  }
+}

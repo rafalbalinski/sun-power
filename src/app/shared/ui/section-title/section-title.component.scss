@@ -3,18 +3,7 @@
   display: flex;
   flex-direction: column;
   z-index: 100;
-
-  &--align-left {
-    align-items: flex-start;
-  }
-
-  &--align-center {
-    align-items: center;
-  }
-
-  &--align-right {
-    align-items: flex-end;
-  }
+  align-items: center;
 
   &__sub-title {
     margin: 0;
@@ -25,12 +14,13 @@
   }
 
   &__title {
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
     color: #002e44;
     font-size: 60px;
     font-weight: 800;
-    line-height: 90px;
+    line-height: 70px;
     letter-spacing: -1.8px;
+    text-align: center;
   }
 
   &__shadow-title {
@@ -44,6 +34,7 @@
     font-weight: 800;
     transform: translateX(-50%);
     z-index: -1;
+    white-space: nowrap;
   }
 
   &__line {

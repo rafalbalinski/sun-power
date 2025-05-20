@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { SectionTitleComponent } from '../../shared/ui/section-title/section-title.component';
+import { SectionTitleComponent } from '@shared/ui';
 import { OfferStorageService } from '@offer/data-access/offer-storage.service';
 import { OfferElementComponent } from '@offer/ui/offer-element/offer-element.component';
 
