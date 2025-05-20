@@ -3,10 +3,12 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "@shared/*": ["app/shared/*"],
       "@database/*": ["app/database/*"],
       "@navigation/*": ["app/core/navigation/*"],
       "@contact/*": ["app/domain/contact/*"],
       "@offer/*": ["app/domain/offer/*"],
+      "@malfunction/*": ["app/domain/malfunction/*"],
     },
     "outDir": "./dist/out-tsc",
     "strict": true,

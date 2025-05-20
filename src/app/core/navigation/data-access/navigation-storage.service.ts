@@ -54,6 +54,7 @@ export class NavigationStorageService {
           'about-us',
           'offer',
           'contact',
+          'malfunction',
         ];
         const fragmentsPositions: number[] = fragments.map((fragment: string) =>
           Math.abs(

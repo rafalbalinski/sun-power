@@ -1,17 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { AccordionComponent } from '@shared/ui';
 
-import { ContactComponent } from './contact.component';
-
-describe(ContactComponent.name, () => {
-  let component: ContactComponent;
-  let fixture: ComponentFixture<ContactComponent>;
+describe(AccordionComponent.name, () => {
+  let component: AccordionComponent;
+  let fixture: ComponentFixture<AccordionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactComponent],
+      imports: [AccordionComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ContactComponent);
+    fixture = TestBed.createComponent(AccordionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
