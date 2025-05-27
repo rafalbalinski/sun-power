@@ -9,6 +9,7 @@
       "@contact/*": ["app/domain/contact/*"],
       "@offer/*": ["app/domain/offer/*"],
       "@malfunction/*": ["app/domain/malfunction/*"],
+      "@footer/*": ["app/core/footer/*"],
     },
     "outDir": "./dist/out-tsc",
     "strict": true,
