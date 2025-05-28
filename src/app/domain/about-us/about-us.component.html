@@ -1,0 +1,21 @@
+<div class="about-us">
+  <div class="about-us__texts">
+    <a
+      [routerLink]="['']"
+      [fragment]="'offer'"
+      class="about-us__texts__scroll-down-btn"
+    >
+      <img src="assets/svg/down-long.svg" alt="arrow down icon" />
+    </a>
+
+    <div class="about-us__texts__subtitle">{{ aboutUs().subtitle }}</div>
+
+    <div class="about-us__texts__title">{{ aboutUs().title }}</div>
+
+    <div class="about-us__texts__description">
+      {{ aboutUs().description }}
+    </div>
+  </div>
+
+  <img class="about-us__main-graphic" src="assets/img/about-us.png" alt="" />
+</div>
