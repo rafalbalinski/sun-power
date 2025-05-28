@@ -50,7 +50,6 @@ export class NavigationStorageService {
     this.scroll$.pipe(
       map(() => {
         const fragments: NavigationItem['fragment'][] = [
-          'home',
           'about-us',
           'offer',
           'contact',

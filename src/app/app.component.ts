@@ -4,6 +4,7 @@ import { OfferComponent } from '@offer/offer.component';
 import { ContactComponent } from '@contact/contact.component';
 import { MalfunctionComponent } from '@malfunction/malfunction.component';
 import { FooterComponent } from '@footer/footer.component';
+import { AboutUsComponent } from '@about-us/about-us.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { FooterComponent } from '@footer/footer.component';
     ContactComponent,
     MalfunctionComponent,
     FooterComponent,
+    AboutUsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

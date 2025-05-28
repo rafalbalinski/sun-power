@@ -6,6 +6,7 @@
       "@shared/*": ["app/shared/*"],
       "@database/*": ["app/database/*"],
       "@navigation/*": ["app/core/navigation/*"],
+      "@about-us/*": ["app/domain/about-us/*"],
       "@contact/*": ["app/domain/contact/*"],
       "@offer/*": ["app/domain/offer/*"],
       "@malfunction/*": ["app/domain/malfunction/*"],
