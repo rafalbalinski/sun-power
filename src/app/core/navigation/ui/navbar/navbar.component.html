@@ -18,4 +18,10 @@
   </nav>
 
   <div class="navbar__spacer"></div>
+
+  <app-sidebar-toggle-btn
+    class="navbar__burger-menu"
+    [isSidebarActive]="isSidebarActive()"
+    (toggleSidebar)="toggleSidebar.emit($event)"
+  />
 </div>

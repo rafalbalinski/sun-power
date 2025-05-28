@@ -1,0 +1,21 @@
+<div class="sidebar" [class.sidebar--active]="isSidebarActive()">
+  <div class="sidebar__header">
+    <img class="sidebar__header__logo" src="assets/img/logo.png" alt="logo" />
+
+    <app-sidebar-toggle-btn
+      [isSidebarActive]="true"
+      (toggleSidebar)="closeSidebar.emit()"
+    />
+  </div>
+
+  <div class="sidebar__navigation-items">
+    @for (navigationItem of navigationItems(); track navigationItem.fragment) {
+      <a
+        [routerLink]="navigationItem.path"
+        [fragment]="navigationItem.fragment"
+        (click)="closeSidebar.emit()"
+        >{{ navigationItem.name }}</a
+      >
+    }
+  </div>
+</div>

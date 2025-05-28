@@ -1,0 +1,54 @@
+.toggle-btn {
+  position: relative;
+  height: 22px;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+
+  &__line {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #002e44;
+    transition:
+      width 0.3s,
+      opacity 0.3s,
+      transform 0.3s;
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 10px;
+    }
+
+    &:nth-child(3) {
+      top: 20px;
+      width: 20px;
+    }
+  }
+
+  &:hover &__line {
+    width: 30px;
+  }
+
+  &--active &__line {
+    &:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+
+    &:nth-child(2) {
+      opacity: 0;
+    }
+
+    &:nth-child(3) {
+      width: 30px;
+      transform: translateY(-10px) rotate(-45deg);
+    }
+  }
+}

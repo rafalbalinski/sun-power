@@ -2,4 +2,12 @@
   [navigationItems]="navigationStorage.navigationItems()"
   [hasNavigationBoxShadow]="navigationStorage.hasNavigationBoxShadow()"
   [currentFragment]="navigationStorage.currentFragment()"
+  [isSidebarActive]="isSidebarActive()"
+  (toggleSidebar)="isSidebarActive.set($event)"
+/>
+
+<app-sidebar
+  [navigationItems]="navigationStorage.navigationItems()"
+  [isSidebarActive]="isSidebarActive()"
+  (closeSidebar)="isSidebarActive.set(false)"
 />

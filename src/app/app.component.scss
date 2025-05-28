@@ -1,5 +1,29 @@
 .main-wrapper {
   width: 100%;
-  padding: 0 15px 120px;
+  padding: 0 15px;
   overflow-x: hidden;
+
+  .about-us {
+    padding-top: 100px;
+  }
+
+  .offer {
+    padding-top: 130px;
+  }
+
+  .contact {
+    padding-top: 90px;
+
+    @media (width > 900px) {
+      padding-top: 150px;
+    }
+  }
+
+  .malfunction {
+    padding-top: 130px;
+  }
+}
+
+.footer {
+  padding-top: 120px;
 }

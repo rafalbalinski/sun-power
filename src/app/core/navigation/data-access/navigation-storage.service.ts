@@ -24,7 +24,7 @@ export class NavigationStorageService {
   private readonly state = signal<NavigationState>({
     navigationItems: NAVIGATION_ITEMS,
     hasNavigationBoxShadow: false,
-    currentFragment: 'home',
+    currentFragment: 'about-us',
   });
 
   public readonly navigationItems = computed(
