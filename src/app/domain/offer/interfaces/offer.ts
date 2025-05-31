@@ -1,7 +1,7 @@
 export interface Offer {
   title: string;
   description: string;
-  price: number;
+  price: string;
   icon?: string;
   selected?: boolean;
 }

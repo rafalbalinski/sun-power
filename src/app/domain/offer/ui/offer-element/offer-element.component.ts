@@ -1,10 +1,9 @@
 import { Component, input } from '@angular/core';
 import { Offer } from '@offer/interfaces/offer';
-import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-offer-element',
-  imports: [CurrencyPipe],
+  imports: [],
   templateUrl: './offer-element.component.html',
   styleUrl: './offer-element.component.scss',
 })
