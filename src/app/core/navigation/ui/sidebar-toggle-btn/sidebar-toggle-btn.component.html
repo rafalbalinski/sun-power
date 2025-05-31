@@ -1,0 +1,9 @@
+<button
+  class="toggle-btn"
+  [class.toggle-btn--active]="isSidebarActive()"
+  (click)="toggleSidebar.emit(!isSidebarActive())"
+>
+  <div class="toggle-btn__line"></div>
+  <div class="toggle-btn__line"></div>
+  <div class="toggle-btn__line"></div>
+</button>

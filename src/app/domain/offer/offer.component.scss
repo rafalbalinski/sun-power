@@ -3,11 +3,6 @@
   flex-direction: column;
   justify-content: center;
   gap: 80px;
-  padding-bottom: 80px;
-
-  @media (width > 900px) {
-    padding-bottom: 150px;
-  }
 
   &__elements {
     display: flex;
